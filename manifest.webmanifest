@@ -1,0 +1,12 @@
+{
+  "name": "Knight Run 2",
+  "short_name": "Knight Run 2",
+  "id": "com.example.gamename",
+  "description": "",
+  "orientation": "landscape",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "black",
+  "categories": ["games", "entertainment"],
+  "icons": []
+}
