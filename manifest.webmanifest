@@ -2,7 +2,7 @@
   "name": "Knight Run 2",
   "short_name": "Knight Run 2",
   "id": "com.example.gamename",
-  "description": "",
+  "description": "cute platform  runner game with a count down. ",
   "orientation": "landscape",
   "start_url": "./index.html",
   "display": "standalone",
