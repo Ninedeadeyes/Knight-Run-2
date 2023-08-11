@@ -15,6 +15,14 @@ gdjs.StarterCode.GDBigDemonObjects1= [];
 gdjs.StarterCode.GDBigDemonObjects2= [];
 gdjs.StarterCode.GDNewBBText2Objects1= [];
 gdjs.StarterCode.GDNewBBText2Objects2= [];
+gdjs.StarterCode.GDNewTiledSpriteObjects1= [];
+gdjs.StarterCode.GDNewTiledSpriteObjects2= [];
+gdjs.StarterCode.GDFallTreesBackgroundObjects1= [];
+gdjs.StarterCode.GDFallTreesBackgroundObjects2= [];
+gdjs.StarterCode.GDNewBBText3Objects1= [];
+gdjs.StarterCode.GDNewBBText3Objects2= [];
+gdjs.StarterCode.GDNewBBText4Objects1= [];
+gdjs.StarterCode.GDNewBBText4Objects2= [];
 
 
 gdjs.StarterCode.eventsList0 = function(runtimeScene) {
@@ -35,7 +43,7 @@ for (var i = 0, k = 0, l = gdjs.StarterCode.GDKnightMaleObjects1.length;i<l;++i)
 gdjs.StarterCode.GDKnightMaleObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14375196);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(20017156);
 }
 }
 if (isConditionTrue_0) {
@@ -64,9 +72,22 @@ let isConditionTrue_0 = false;
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Up");
+isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "s");
 if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Intro ", false);
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "b");
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "IntroEasy", false);
 }}
 
 }
@@ -93,6 +114,14 @@ gdjs.StarterCode.GDBigDemonObjects1.length = 0;
 gdjs.StarterCode.GDBigDemonObjects2.length = 0;
 gdjs.StarterCode.GDNewBBText2Objects1.length = 0;
 gdjs.StarterCode.GDNewBBText2Objects2.length = 0;
+gdjs.StarterCode.GDNewTiledSpriteObjects1.length = 0;
+gdjs.StarterCode.GDNewTiledSpriteObjects2.length = 0;
+gdjs.StarterCode.GDFallTreesBackgroundObjects1.length = 0;
+gdjs.StarterCode.GDFallTreesBackgroundObjects2.length = 0;
+gdjs.StarterCode.GDNewBBText3Objects1.length = 0;
+gdjs.StarterCode.GDNewBBText3Objects2.length = 0;
+gdjs.StarterCode.GDNewBBText4Objects1.length = 0;
+gdjs.StarterCode.GDNewBBText4Objects2.length = 0;
 
 gdjs.StarterCode.eventsList0(runtimeScene);
 
