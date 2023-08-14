@@ -251,7 +251,7 @@ for (var i = 0, k = 0, l = gdjs.Scene1_32Code.GDKnightMaleObjects2.length;i<l;++
 gdjs.Scene1_32Code.GDKnightMaleObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(19706644);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(18498692);
 }
 }
 if (isConditionTrue_0) {
@@ -306,7 +306,32 @@ if (isConditionTrue_0) {
 }
 
 
+{
+
+
+let isConditionTrue_0 = false;
+{
+}
+
+}
+
+
 };gdjs.Scene1_32Code.eventsList3 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "r");
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Starter", false);
+}}
+
+}
+
+
+};gdjs.Scene1_32Code.eventsList4 = function(runtimeScene) {
 
 {
 
@@ -356,7 +381,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.Scene1_32Code.eventsList4 = function(runtimeScene) {
+};gdjs.Scene1_32Code.eventsList5 = function(runtimeScene) {
 
 {
 
@@ -408,7 +433,7 @@ if (isConditionTrue_0) {
 
 };gdjs.Scene1_32Code.mapOfGDgdjs_9546Scene1_959532Code_9546GDKnightMaleObjects1Objects = Hashtable.newFrom({"KnightMale": gdjs.Scene1_32Code.GDKnightMaleObjects1});
 gdjs.Scene1_32Code.mapOfGDgdjs_9546Scene1_959532Code_9546GDFlagObjects1Objects = Hashtable.newFrom({"Flag": gdjs.Scene1_32Code.GDFlagObjects1});
-gdjs.Scene1_32Code.eventsList5 = function(runtimeScene) {
+gdjs.Scene1_32Code.eventsList6 = function(runtimeScene) {
 
 {
 
@@ -427,7 +452,7 @@ gdjs.copyArray(runtimeScene.getObjects("youWin"), gdjs.Scene1_32Code.GDyouWinObj
 }
 
 
-};gdjs.Scene1_32Code.eventsList6 = function(runtimeScene) {
+};gdjs.Scene1_32Code.eventsList7 = function(runtimeScene) {
 
 {
 
@@ -455,7 +480,7 @@ gdjs.copyArray(runtimeScene.getObjects("GameOver"), gdjs.Scene1_32Code.GDGameOve
 }
 }
 { //Subevents
-gdjs.Scene1_32Code.eventsList5(runtimeScene);} //End of subevents
+gdjs.Scene1_32Code.eventsList6(runtimeScene);} //End of subevents
 }
 
 }
@@ -465,7 +490,7 @@ gdjs.Scene1_32Code.eventsList5(runtimeScene);} //End of subevents
 gdjs.Scene1_32Code.mapOfGDgdjs_9546Scene1_959532Code_9546GDBigDemonObjects2Objects = Hashtable.newFrom({"BigDemon": gdjs.Scene1_32Code.GDBigDemonObjects2});
 gdjs.Scene1_32Code.mapOfGDgdjs_9546Scene1_959532Code_9546GDKnightMaleObjects2Objects = Hashtable.newFrom({"KnightMale": gdjs.Scene1_32Code.GDKnightMaleObjects2});
 gdjs.Scene1_32Code.mapOfGDgdjs_9546Scene1_959532Code_9546GDOgreObjects2Objects = Hashtable.newFrom({"Ogre": gdjs.Scene1_32Code.GDOgreObjects2});
-gdjs.Scene1_32Code.eventsList7 = function(runtimeScene) {
+gdjs.Scene1_32Code.eventsList8 = function(runtimeScene) {
 
 {
 
@@ -553,33 +578,43 @@ if (isConditionTrue_0) {
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("KnightMale"), gdjs.Scene1_32Code.GDKnightMaleObjects1);
+gdjs.copyArray(runtimeScene.getObjects("KnightMale"), gdjs.Scene1_32Code.GDKnightMaleObjects2);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Scene1_32Code.GDKnightMaleObjects1.length;i<l;++i) {
-    if ( gdjs.Scene1_32Code.GDKnightMaleObjects1[i].getVariableBoolean(gdjs.Scene1_32Code.GDKnightMaleObjects1[i].getVariables().get("Death"), true) ) {
+for (var i = 0, k = 0, l = gdjs.Scene1_32Code.GDKnightMaleObjects2.length;i<l;++i) {
+    if ( gdjs.Scene1_32Code.GDKnightMaleObjects2[i].getVariableBoolean(gdjs.Scene1_32Code.GDKnightMaleObjects2[i].getVariables().get("Death"), true) ) {
         isConditionTrue_0 = true;
-        gdjs.Scene1_32Code.GDKnightMaleObjects1[k] = gdjs.Scene1_32Code.GDKnightMaleObjects1[i];
+        gdjs.Scene1_32Code.GDKnightMaleObjects2[k] = gdjs.Scene1_32Code.GDKnightMaleObjects2[i];
         ++k;
     }
 }
-gdjs.Scene1_32Code.GDKnightMaleObjects1.length = k;
+gdjs.Scene1_32Code.GDKnightMaleObjects2.length = k;
 if (isConditionTrue_0) {
-/* Reuse gdjs.Scene1_32Code.GDKnightMaleObjects1 */
-{for(var i = 0, len = gdjs.Scene1_32Code.GDKnightMaleObjects1.length ;i < len;++i) {
-    gdjs.Scene1_32Code.GDKnightMaleObjects1[i].setPosition(32,200);
+/* Reuse gdjs.Scene1_32Code.GDKnightMaleObjects2 */
+{for(var i = 0, len = gdjs.Scene1_32Code.GDKnightMaleObjects2.length ;i < len;++i) {
+    gdjs.Scene1_32Code.GDKnightMaleObjects2[i].setPosition(32,200);
 }
 }{gdjs.evtTools.sound.playSound(runtimeScene, "95fe7f6a064b3e17dce2774ad92cee83f877d2d6dda1cd16d79b876ca572911c_Death.aac", false, 100, 1);
-}{for(var i = 0, len = gdjs.Scene1_32Code.GDKnightMaleObjects1.length ;i < len;++i) {
-    gdjs.Scene1_32Code.GDKnightMaleObjects1[i].setVariableBoolean(gdjs.Scene1_32Code.GDKnightMaleObjects1[i].getVariables().get("Death"), false);
+}{for(var i = 0, len = gdjs.Scene1_32Code.GDKnightMaleObjects2.length ;i < len;++i) {
+    gdjs.Scene1_32Code.GDKnightMaleObjects2[i].setVariableBoolean(gdjs.Scene1_32Code.GDKnightMaleObjects2[i].getVariables().get("Death"), false);
 }
 }}
 
 }
 
 
-};gdjs.Scene1_32Code.eventsList8 = function(runtimeScene) {
+{
+
+
+let isConditionTrue_0 = false;
+{
+}
+
+}
+
+
+};gdjs.Scene1_32Code.eventsList9 = function(runtimeScene) {
 
 {
 
@@ -589,7 +624,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(1)) == 0;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(20254940);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(18514356);
 }
 }
 if (isConditionTrue_0) {
@@ -609,11 +644,11 @@ let isConditionTrue_0 = false;
 }
 
 
-};gdjs.Scene1_32Code.eventsList9 = function(runtimeScene) {
+};gdjs.Scene1_32Code.eventsList10 = function(runtimeScene) {
 
 };gdjs.Scene1_32Code.mapOfGDgdjs_9546Scene1_959532Code_9546GDKnightMaleObjects1Objects = Hashtable.newFrom({"KnightMale": gdjs.Scene1_32Code.GDKnightMaleObjects1});
 gdjs.Scene1_32Code.mapOfGDgdjs_9546Scene1_959532Code_9546GDCoinObjects1Objects = Hashtable.newFrom({"Coin": gdjs.Scene1_32Code.GDCoinObjects1});
-gdjs.Scene1_32Code.eventsList10 = function(runtimeScene) {
+gdjs.Scene1_32Code.eventsList11 = function(runtimeScene) {
 
 {
 
@@ -680,7 +715,15 @@ gdjs.copyArray(runtimeScene.getObjects("KnightMale"), gdjs.Scene1_32Code.GDKnigh
 {
 
 
-gdjs.Scene1_32Code.eventsList3(runtimeScene);
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.camera.layerIsVisible(runtimeScene, "Game Over");
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.Scene1_32Code.eventsList3(runtimeScene);} //End of subevents
+}
+
 }
 
 
@@ -694,7 +737,7 @@ gdjs.Scene1_32Code.eventsList4(runtimeScene);
 {
 
 
-gdjs.Scene1_32Code.eventsList6(runtimeScene);
+gdjs.Scene1_32Code.eventsList5(runtimeScene);
 }
 
 
@@ -716,6 +759,13 @@ gdjs.Scene1_32Code.eventsList8(runtimeScene);
 
 
 gdjs.Scene1_32Code.eventsList9(runtimeScene);
+}
+
+
+{
+
+
+gdjs.Scene1_32Code.eventsList10(runtimeScene);
 }
 
 
@@ -749,36 +799,6 @@ gdjs.copyArray(runtimeScene.getObjects("Gold"), gdjs.Scene1_32Code.GDGoldObjects
     gdjs.Scene1_32Code.GDGoldObjects1[i].setString("Gold: " + gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().getFromIndex(0)));
 }
 }}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-{
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-{
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-{
-}
 
 }
 
@@ -900,7 +920,7 @@ gdjs.Scene1_32Code.GDChestObjects1.length = 0;
 gdjs.Scene1_32Code.GDChestObjects2.length = 0;
 gdjs.Scene1_32Code.GDChestObjects3.length = 0;
 
-gdjs.Scene1_32Code.eventsList10(runtimeScene);
+gdjs.Scene1_32Code.eventsList11(runtimeScene);
 
 return;
 
