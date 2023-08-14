@@ -39,7 +39,7 @@ for (var i = 0, k = 0, l = gdjs.IntroEasyCode.GDKnightMaleObjects1.length;i<l;++
 gdjs.IntroEasyCode.GDKnightMaleObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(20146084);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(18063332);
 }
 }
 if (isConditionTrue_0) {
